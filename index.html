@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>تشفير وفك التشفير</title>
+    <style>
+        * {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Tajawal', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        h1 {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: 900;
+        }
+        
+        button {
+            cursor: pointer;
+            display: block;
+            margin: 12px auto;
+            width: 70%;
+            font-size: 20px;
+            padding: 10px;
+            border: none;
+            background-color: green;
+            font-weight: 700;
+        }
+        
+        h2 {
+            margin: 10px auto;
+            background-color: #584561;
+            padding: 8px;
+            color: #fff;
+            text-align: center;
+        }
+        
+        a {
+            color: inherit;
+        }
+        
+        nav {
+            display: flex;
+            color: white;
+            padding: 11px;
+            font-size: 20px;
+            justify-content: space-around;
+            background-color: #333;
+        }
+        
+        textarea {
+            display: block;
+            width: 94%;
+            margin: 8px auto;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 15px;
+            outline: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>التشفير وفك التشفير</h1>
+    <nav>
+        <a href="#one">
+            <li>التشفير</li>
+        </a>
+        <a href="#two">
+            <li> فك التشفير </li>
+        </a>
+    </nav>
+    <article id="one">
+
+        <h2>التشفير</h2>
+        <textarea id="code" name="" placeholder="اكتب النص المراد تشفيره هنا" id="" cols="30" rows="10"></textarea>
+        <button id="btn">تشفير</button>
+        <textarea id="result" id="" cols="30" rows="10"></textarea>
+        <hr size="3" color="#784523">
+    </article>
+    <article id="two">
+
+        <h2> فك التشفير</h2>
+        <textarea id="code2" name="" placeholder="اكتب النص المراد فك تشفيره هنا" id="" cols="30" rows="10"></textarea>
+        <button id="btn2">فك التشفير</button>
+        <textarea id="result2" cols="30" rows="10"></textarea>
+    </article>
+    <script src="script.js"></script>
+</body>
+
+</html>
